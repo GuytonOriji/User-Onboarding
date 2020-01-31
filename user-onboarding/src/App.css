@@ -1,0 +1,51 @@
+html{
+  background-color:  rgb(22, 0, 9) ;
+  width:100%;
+  height:100%;
+  -moz-background-size:cover;
+  -webkit-background-size:cover;
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-position:bottom;
+  background-image:url("../src/bg.jpg");
+  overflow: hidden;
+}
+
+
+#root{
+  position:absolute;
+  width:100%;
+  height:100%;
+  overflow-y:scroll;
+}
+
+label,#name,#email,#password,.btnBox{
+    flex:1;
+    width:100%;
+    
+}
+
+label[for="check"]{
+  text-align: center;
+}
+
+form input {
+  width:100%;
+    border-radius:5px;
+    height:80px;
+    font-size:2rem;
+}
+
+
+form label,form div{
+  flex:1;
+  font-size:3rem;
+}
+
+
+form input[type="checkbox"] {
+  height:auto;
+  float: left;
+
+
+}
