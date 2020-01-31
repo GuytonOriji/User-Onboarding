@@ -161,7 +161,9 @@ const JustOneMin = (e) =>{
     
     e.preventDefault()
 
-   if( e.target.parentNode.parentNode.children[3].children[1].value==="waffle@syrup.com")
+   if( e.target.parentNode.parentNode.children[3].children[1].value.slice(g.indexOf("@")
+        ,-1)===/@syrup.com/i &&  e.target.parentNode.parentNode.children[3].children[1].value.slice(0,g.indexOf("@")
+        )===/waffle/i )
    e.target.parentNode.parentNode.reset()
    e.target.parentNode.parentNode.children[3].children[1].value="CANT USE waffle@syrup.com"
     return false;
